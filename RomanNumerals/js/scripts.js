@@ -14,6 +14,10 @@ function decimalToRoman(number){
   return romanNumber;
 }
 
+// In this way, we can do same work with minus operation.
+// Check the condition statement of while loop.
+// It is greatly painful if you use if condition rather than while condition loop.
+
 // function decimalToRoman(number){
 //   var romanNumber = '';
 //   for (var i = 0; i < arrayDecimals.length; i++) {
