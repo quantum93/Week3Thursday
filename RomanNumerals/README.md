@@ -22,24 +22,14 @@ It runs the input through the back end logic and returns a roman numeral.
 | When input is 5                                                            | 5                                | V                                         |
 | When input is greater then 5 but less then 9                               | 7                                | VII                                       |
 | When input is 9 and 10 respectively                                        | 9, 10                            | IX, X                                     |
-
-| In that function, define firstChar of each word                            | 3dad are bugs                    | 3dad 3 are a bugs b                       |
-| we call pigWord function to translate each word by definition.             | 3dad are bugs                    | 3dad areay bugsway                        |
-| we define empty array to store the result of pigWord function.             | 3dad are bugs                    | ['3dad', 'areay', 'bugsway']              |
-| we return that array to front-end logic                                    |                                  |                                           |
-| In front-end, we use forEach loop to re-narrate each element of array to   |                                  |                                           |    
-| make string type result. (use append rather than text to avoid overwrite)  | ['3dad', 'areay', 'bugsway']     | 3dad areay bugsway                        |
-| For word beginning with consonants, find index of vowel in word            | thread                           | index of e                                |
-| return word + consonants[i] + ....+ consonants[index of vowel] + 'ay'      | thread                           | threadthray                               |
+| This is conversion and so do the largest number first!                     | convert the largest one first    | ex. 115 --> C and 15 --> CX and 5 -->CXV  |
+| We need specific characters for 4, 5, and 9. If it is true,                | index for 40, 50, 90             | XL, L, XC                                 |
+| So do 40, 50, and 90 ...400, 500, 900                                      | index for 400, 500, 900          | CD, D, CM                                 |
+| make empty string for roman numerals writing                               | var result = '';                 |                                           |
+| for loop for each decimals                                                 |                                  |                                           |
+| use modulus to compare it with number itself                               |                                  |                                           |
 ...
 ...
-| since they do not start with consonants or vowels in multiple words.       | 3dad are bugs                    | 3dad areway oolcay                        |
-| The program adds "way" to multiple words beginning with a vowel.           | island is awesome                | islandway isway awesomeway                |
-| The program move consonant to the end of word and adds "ay" to multiple    |                                  |                                           |
-| words beginning with a consonants.                                         | dad is so cool                   | adday isway osay oolcay                   |
-...
-...
-| Everything works well!                                                     | my mom is amazing queen          | ymay ommay isway amazingway eenquay       |
 
 ## Setup/Installation Requirements
 
