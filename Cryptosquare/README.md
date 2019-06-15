@@ -20,7 +20,9 @@ It runs an encryption using Cryptosquare logic and return encrypt message.
 | find the number of string after regular expression                | console.log(stringNumber)        | 85                                        |
 | find the square row from the number of string                     | 85 characters in string          | SQRT(85) and Math.ceil to give 10         |
 | find the square column from the number of string                  | 85 characters in string          | SQRT(85) and Math.floor to give 9         |
-| make two array and one is for row input and other is column input | 
+| make two array and one is for row input and other is column input |                                  |                                           |
+| save characters only string to an array of single character       | "don't compare yourself...       | d,o,n,t,c,o,m,p,a,r,e,y,o,u ~             |
+| save 1D array to 2D array                                         | d,o,n,t,c,o,m,p,a,r,e,y,o,u ~    | 
 
 |
 ...

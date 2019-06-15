@@ -1,18 +1,26 @@
 // --------------------- Back-end Logic -------------------------
 
 var encrypt = function(sentence) {
-    // var lowerSentence = sentence.toLowerCase();
-    // var wordSentence = lowerSentence.replace(/[\W\s]/gi, '');
     var string = sentence.toLowerCase().replace(/[\W\s]/gi, '');
-    var stringLength = sentence.length
-    var squareRow = Math.ceil(Math.sqrt(stringLength))
-    var squareColumn = Math.floor(Math.sqrt(stringLength))
-    console.log(stringLength);
-    console.log(squareRow);
-    console.log(squareColumn);
-    var stringArray = Create2DArray(squareRow, squareColumn);
-    console.log(stringArray);
-    return string
+    // 이게 돌아가는 이유는 string.length를 변수로 받으면서 문자로 지정되어도
+    // 다음의 sqrt에서 자동으로 숫자로 인식되는 자바스크립트의 유연한 데이터 형식때문이다. 
+    // var stringLength = string.length
+    // var squareRow = Math.ceil(Math.sqrt(stringLength))
+    // var squareColumn = Math.floor(Math.sqrt(stringLength))
+    var squareRow = Math.ceil(Math.sqrt(string.length))
+    var squareColumn = Math.floor(Math.sqrt(string.length))
+    console.log(squareRow)
+    console.log(squareColumn)
+    console.log(string.length)
+    var string1Darray = [];
+    for (var i = 0; i < string.length; i++) {
+      string1Darray[i] = string.charAt(i);
+    }
+
+    var string2Darray = Create2DArray(squareRow, squareColumn);
+
+
+    return string1Darray
 };
 
 
